@@ -1,0 +1,155 @@
+* {
+  margin: 5px;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+}
+
+.header {
+  padding: 10px 20px;
+  background-color: #ffffff;
+  border-bottom: 1px solid #e0e0e0;
+  margin-top: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap; /* Added for responsiveness */
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+  margin-left: 20px;
+  flex: 1;
+}
+
+.nav-links li {
+  font-size: 16px;
+  font-weight: 500;
+  color: #008080;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.nav-links li a:hover {
+  color: #ff8800;
+}
+
+.search-category-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  flex-wrap: wrap; /* Allow wrapping for responsiveness */
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 350px;
+  flex: 1;
+}
+
+.search-input {
+  width: 100%;
+  padding: 8px 10px;
+  font-size: 14px;
+  border-radius: 5px 0 0 5px;
+  border: 1px solid #ccc;
+}
+
+.search-button {
+  padding: 4px 10px;
+  background-color: #008080;
+  border: none;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  color: #ffffff;
+}
+
+.search-button:hover {
+  background-color: #006666;
+}
+
+.category-container {
+  margin-left: 10px;
+  flex: 1;
+}
+
+.select {
+  padding: 8px;
+  font-size: 14px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  background-color: #f9f9f9;
+}
+
+.nav-icons {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+  margin-right: 20px;
+}
+
+.nav-icons li {
+  font-size: 18px;
+}
+
+.nav-icons li a {
+  color: #008080;
+}
+
+.nav-icons li a:hover {
+  color: #ff8800;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-links, .search-category-container, .nav-icons {
+    justify-content: space-between;
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .search-container, .select {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .category-container {
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .nav-links li {
+    font-size: 14px;
+  }
+
+  .nav-icons li {
+    font-size: 16px;
+  }
+
+  .search-input {
+    font-size: 12px;
+  }
+}
+

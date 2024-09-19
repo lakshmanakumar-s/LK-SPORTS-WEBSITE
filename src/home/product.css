@@ -1,0 +1,173 @@
+/* Container Styling */
+.product-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Responsive grid */
+  gap: 20px; /* Space between cards */
+  padding: 20px;
+}
+
+/* Card Styling */
+.product-card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  flex: 0 0 250px; /* Adjust the width */
+}
+
+.product-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Logo and Cart Styling */
+.logo-cart {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.logo-cart img {
+  width: 50px;
+}
+
+.logo-cart i {
+  font-size: 24px;
+  color: #333;
+}
+
+/* Image Container */
+.main-images {
+  position: relative;
+  margin: 20px 0;
+}
+
+.main-images img {
+  width: 100%;
+  display: none;
+  border-radius: 8px;
+  transition: opacity 0.3s ease;
+}
+
+.main-images .active {
+  display: block;
+  opacity: 1;
+}
+
+/* Shoe Details */
+.shoe-details {
+  text-align: center;
+  margin-top: 16px;
+}
+
+.shoe-details .shoe_name {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 8px;
+  display: block;
+}
+
+.shoe-details p {
+  font-size: 14px;
+  color: #666;
+}
+
+.stars {
+  margin: 8px 0;
+}
+
+.stars i {
+  color: #f4c150;
+}
+
+/* Color and Price Section */
+.color-price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 16px;
+}
+
+.color-option {
+  display: flex;
+  flex-direction: column;
+}
+
+.color-option .color {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.circles {
+  display: flex;
+  gap: 10px;
+  margin-top: 5px;
+}
+
+.circle {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 2px solid transparent;
+}
+
+.circle.blue {
+  background-color: #3b82f6;
+}
+
+.circle.pink {
+  background-color: #ec4899;
+}
+
+.circle.yellow {
+  background-color: #f59e0b;
+}
+
+.circle.active {
+  border: 2px solid #333;
+}
+
+/* Price Styling */
+.price {
+  font-size: 18px;
+  font-weight: 700;
+  color: #333;
+}
+
+/* Button Styling */
+.button {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.button button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button button:hover {
+  background-color: #45a049;
+}
+
+/* Section Styling */
+.product-section {
+  margin: 20px 0;
+}
+
+.section-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
